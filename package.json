@@ -1,0 +1,17 @@
+{
+  "name": "hadamard",
+  "version": "1.0.0",
+  "description": "a tiny module for build Hadamard matrices",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hadamard",
+    "processing"
+  ],
+  "author": "nsklyarov",
+  "license": "ISC"
+}
