@@ -1,22 +1,26 @@
-function resize(arr, newSize, defaultValue) {
-  return [
-    ...arr,
-    ...Array(Math.max(newSize - arr.length, 0)).fill(defaultValue)
-  ];
+function resize(newSize, defaultValue) {
+  let newArr = [];
+
+  for (let i = 0; i < newSize; i++) {
+    newArr[i] = defaultValue;
+  }
+
+  return newArr;
 }
 
-function buildSquareMatrix(orderN, list = []) {
-  const resized = resize(list, orderN, 0);
+function buildSquareMatrix(orderN) {
+  const resized = resize(orderN, 0);
+
   for (i = 0; i < orderN; i++) {
-    resized[i] = resize(list, orderN, 0);
+    resized[i] = resize(orderN, 0);
   }
 
   return resized;
 }
 
-function buildResidueMatrix(orderN, result) {
+function buildResidueMatrix(orderN) {
   const p = orderN - 1;
-  const residues = resize([], 2 * p, 0);
+  const residues = resize(2 * p, 0);
 
   for (i = 0; i < p; i++) {
     residues[i] = -1;
