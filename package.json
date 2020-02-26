@@ -3,10 +3,10 @@
   "version": "1.0.1-0",
   "description": "a tiny module for build Hadamard matrices",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/nsklyarov/hadamard/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nsklyarov/hadamard.git"
   },
   "keywords": [
     "hadamard",
